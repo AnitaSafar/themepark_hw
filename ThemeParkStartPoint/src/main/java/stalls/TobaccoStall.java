@@ -17,4 +17,9 @@ public class TobaccoStall extends Stall implements ISecurity {
             return false;
         }
     }
+
+
+    public int getRating() {
+        return 0;
+    }
 }

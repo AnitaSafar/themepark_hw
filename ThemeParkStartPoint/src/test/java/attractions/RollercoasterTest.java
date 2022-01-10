@@ -48,4 +48,10 @@ public class RollercoasterTest {
         visitor1 = new Visitor(11, 1.4, 18);
         assertEquals(false, rollerCoaster.isAllowedTo(visitor1));
     }
+
+    @Test
+    public void willChargeTallVisitorsDouble() {
+        visitor1 = new Visitor(18, 2.1, 50);
+        assertEquals(16.80, rollerCoaster.priceFor(visitor1), 0.1);
+    }
 }
