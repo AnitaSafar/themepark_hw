@@ -42,4 +42,10 @@ public class RollercoasterTest {
         visitor1 = new Visitor(10, 1.5, 15);
         assertEquals(false, rollerCoaster.isAllowedTo(visitor1));
     }
+
+    @Test
+    public void visitorNotTallEnoughAndOldEnough() {
+        visitor1 = new Visitor(11, 1.4, 18);
+        assertEquals(false, rollerCoaster.isAllowedTo(visitor1));
+    }
 }
